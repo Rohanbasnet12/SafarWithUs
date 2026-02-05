@@ -1,0 +1,70 @@
+#bookSection {
+  margin-top: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+#bookSection-bannerImg {
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+}
+
+#bookSection-bannerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) brightness(0.8);
+}
+
+#bookSection-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 90%;
+}
+
+#bookSection-content h2 {
+  font-size: 3rem !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-explore-btn {
+  background: #e06926;
+  border: 2px solid #853100ff;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 7px 22.8px;
+  transition: all 0.3s ease;
+}
+
+.about-explore-btn:hover {
+  border: 2px solid #853100ff;
+  box-shadow: 2px 2px 22px #853100ff;
+}
+
+.about-explore-btn:hover span {
+  margin-left: 3px;
+}
+
+.about-explore-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #bookSection-content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  #bookSection-content {
+    width: 95%;
+  }
+}

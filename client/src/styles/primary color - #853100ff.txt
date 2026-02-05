@@ -1,0 +1,2 @@
+primary color - #853100ff
+secondary color - #e06926

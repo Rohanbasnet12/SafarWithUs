@@ -1,0 +1,292 @@
+/* ==============================
+   Tour Packages Section
+   ============================== */
+#tour-packages-section {
+  margin-bottom: 2rem;
+}
+
+.tour-packages-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #2c3e50;
+}
+
+/* ==============================
+   Swiper Wrapper Container
+   ============================== */
+.swiper-wrapper-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ==============================
+   Swiper Container
+   ============================== */
+.my-swiper-container {
+  position: relative;
+  width: calc(100% - 120px); /* Account for button widths */
+}
+
+.my-swiper {
+  padding: 20px 0 50px;
+}
+
+/* ==============================
+   Custom Navigation Buttons (Outside container)
+   ============================== */
+.custom-swiper-prev,
+.custom-swiper-next {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: #2c3e50;
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.custom-swiper-prev:hover,
+.custom-swiper-next:hover {
+  background: #e06926;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px #853100ff;
+}
+
+.custom-swiper-prev:disabled,
+.custom-swiper-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+.custom-swiper-prev svg,
+.custom-swiper-next svg {
+  transition: transform 0.2s ease;
+}
+
+.custom-swiper-prev:hover svg,
+.custom-swiper-next:hover svg {
+  transform: scale(1.1);
+}
+
+/* ==============================
+   Package Card
+   ============================== */
+.my-package-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
+}
+
+.my-package-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.my-package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.my-package-card:hover .my-package-image img {
+  transform: scale(1.05);
+}
+
+.my-package-details {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-package-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.my-package-desc {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  font-size: 0.95rem;
+}
+
+.my-package-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.my-package-duration {
+  font-size: 0.95rem;
+  color: #000000;
+  background: #0a810a2d;
+  font-weight: bolder;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 3px 10px;
+  margin: 0;
+}
+
+.my-package-link {
+  font-weight: 500;
+  color: #2e4053;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #2e4053;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.31);
+}
+
+.my-package-link:hover {
+  border: 2px solid #e06926;
+  box-shadow: 0 2px 12px #853100ff;
+  color: #e06926;
+}
+
+/* ==============================
+   Pagination
+   ============================== */
+.my-swiper-pagination {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.my-swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #bdc3c7;
+  opacity: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my-swiper-pagination .swiper-pagination-bullet-active {
+  background: #3498db;
+  transform: scale(1.2);
+}
+
+/* ==============================
+   No Packages Message
+   ============================== */
+.no-packages-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 40px 0;
+}
+
+/* ==============================
+   Responsive Design
+   ============================== */
+@media (max-width: 1023px) {
+  .my-package-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  #tour-packages-section {
+    margin: 1rem 0.52rem 3rem 0.52rem;
+  }
+
+  .tour-packages-title {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .swiper-wrapper-container {
+    gap: 5px;
+  }
+
+  .my-swiper-container {
+    width: calc(100% - 90px); /* Adjust for smaller buttons */
+  }
+
+  .custom-swiper-prev,
+  .custom-swiper-next {
+    width: 45px;
+    height: 45px;
+  }
+
+  .custom-swiper-prev svg,
+  .custom-swiper-next svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .my-package-name {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tour-packages-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .my-package-image {
+    height: 160px;
+  }
+
+  .my-package-details {
+    padding: 15px;
+  }
+
+  .custom-swiper-prev,
+  .custom-swiper-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .custom-swiper-prev svg,
+  .custom-swiper-next svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Ensure proper spacing between slides */
+.swiper-slide {
+  height: auto;
+  padding: 10px 0;
+}

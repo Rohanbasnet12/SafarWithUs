@@ -1,0 +1,121 @@
+.faq-container {
+  margin: 0 auto;
+  padding: 10px 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-header h2 {
+  font-size: 2.5rem;
+  color: #853100ff;
+  margin-bottom: 5px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 4px solid #853100ff;
+  border-top: 1px solid #853100ff;
+  border-right: 1px solid #853100ff;
+  border-bottom: 1px solid #853100ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.faq-question {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  min-height: 60px;
+}
+
+.faq-question h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #853100ff;
+  margin: 0;
+  padding-right: 20px;
+  flex: 1;
+}
+
+.faq-icon {
+  color: #6b8e23;
+  min-width: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+.faq-answer p {
+  padding: 0 20px 20px;
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-container {
+    padding: 40px 15px;
+  }
+
+  .faq-header h2 {
+    font-size: 2rem;
+  }
+
+  .faq-question {
+    padding: 15px;
+    min-height: 70px;
+  }
+
+  .faq-question h3 {
+    font-size: 1rem;
+  }
+
+  .faq-answer p {
+    padding: 0 15px 15px;
+    font-size: 0.95rem;
+  }
+}

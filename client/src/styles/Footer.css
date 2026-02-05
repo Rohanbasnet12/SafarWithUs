@@ -1,0 +1,269 @@
+/* Footer Section */
+.footerSection {
+  background: #853100ff;
+  color: white;
+  padding: 15px 0 0;
+  margin-top: auto;
+}
+
+/* Main Footer Content */
+.footer-main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-main-content {
+    grid-template-columns: 2fr 3fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-main-content {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.footer-description {
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+}
+
+.contact-icon {
+  color: #ffd700;
+  margin-top: 2px;
+  min-width: 16px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.social-link:hover {
+  background: #ffd700;
+  color: #1a3e1a;
+  transform: translateY(-2px);
+  border-color: #ffd700;
+}
+
+/* Right Side - Three Sections (3/5 width) */
+.footer-right-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 640px) {
+  .footer-right-sections {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-right-sections {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    gap: 30px;
+  }
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #ffd700;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 4px 0;
+  position: relative;
+  padding-left: 15px;
+}
+
+.footer-link::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffd700;
+  transform: translateX(5px);
+}
+
+.footer-link:hover::before {
+  transform: translateX(3px);
+}
+
+/* Contact Details */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.method-icon {
+  color: #ffd700;
+  margin-top: 4px;
+  min-width: 16px;
+}
+
+.contact-link {
+  display: block;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.contact-link:hover {
+  color: #ffd700;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+}
+
+.footer-bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .footer-bottom-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.footer-bottom-content p {
+  color: white;
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.bottom-link:hover {
+  color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .footerSection {
+    padding: 40px 0 0;
+  }
+
+  .footer-main-content {
+    gap: 30px;
+  }
+
+  .footer-logo h3 {
+    font-size: 1.3rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
