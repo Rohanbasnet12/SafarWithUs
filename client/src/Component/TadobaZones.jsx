@@ -8,86 +8,62 @@ function TadobaZones() {
         <div id="zone-top-content-wrapper">
           {/* Header */}
           <div className="header mb-4 text-left">
-            <h3
-              className="mb-2 text-2xl font-semibold"
-              style={{ color: "#853100ff" }}
-            >
-              Ranthambore’s Famous Tigers and Their Stories
+            <h3 className="mb-2 text-2xl font-semibold">
+              History The Legacy of Satpura National Park
             </h3>
 
             <p>
-              Ranthambore National Park is one of India’s most famous wildlife
-              destinations. It is known for its great population of Bengal
-              Tigers. Many of these majestic big cats have achieved legendary
-              status throughout the years. The tales of these beasts never cease
-              to fascinate nature enthusiasts worldwide.
+              It is said that in the 15th century the Gond kings ruled this area
+              that makes the park have a great history of kings and queens. But
+              also some locals say that there was a person named Taru who was
+              killed by a tiger and in his honour near the Lake a temple was
+              built. This is still worshipped and visited by the locals. The
+              park was established in 1955, and later joined with Andhari
+              Wildlife Sanctuary in 1995 to create the Satpura Andhari Tiger
+              Reserve. You can still see ancient stone pillars built by the Gond
+              kings along old routes which were once used for communication
+              through bell signals.
             </p>
           </div>
 
-          <div id="core-zone" className="grid grid-cols-3 gap-5">
-            {/* Left */}
-            <img src={bandhav} alt="bandhav image" className="core-img" />
-            {/* Right */}
-            <div className="col-span-2">
-              <div>
-                <h5 className="text-amber-800 mb-2 text-amber-900 font-semibold text-2xl">
-                  Machli (T-16)
-                </h5>
-                <p>
-                  Famous as the Queen of Ranthambore, Machli remains the park’s
-                  most iconic tiger. It was born in 1997 and lived an excellent
-                  life of nearly 19 years. It is a great age for a wild tiger.
-                  Machli was known for her fearlessness and hunting prowess.
-                  Machli once famously fought and killed a crocodile. Moreover,
-                  she was also a devoted mother; she raised several cubs. These
-                  cubs went on to rule different territories in the Ranthambore
-                  forest.
-                </p>
-              </div>
-
-              <div className="mt-3">
-                <h5 className="text-amber-800 mb-2 text-amber-900 font-semibold text-2xl">
-                  Ustad (T-24)
-                </h5>
-                <p>
-                  People knew Ustad for his strong presence and power. He was
-                  one of the strongest males in the park and commanded his
-                  domain with ease. But in 2015, he was moved to a zoo after a
-                  few bad fights with people.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div id="buffer-zone" className="grid grid-cols-3 gap-5 mt-4">
-            {/* Left */}
-            <div className="col-span-2">
-              <h5 className="text-amber-800 mb-2 text-amber-900 font-semibold text-2xl">
-                Sultan (T-72)
-              </h5>
+          <div className="grid md:grid-cols-3 gap-6">
+            <img
+              src={bandhav}
+              alt="Tadoba Zone"
+              className="zone-image h-full object-cover"
+            />
+            <div className="md:col-span-2">
               <p>
-                People liked Sultan because he was big and looked like a king.
-                He was a real warrior of the jungle, but sadly, he died in 2018
-                after fighting with another tiger over land.
+                Satpura National Park holds a special place when you unfold its
+                history, longevity, and heritage story. Set away from the hustle
+                and bustle of the city and experience wildlife landscape at its
+                best. This tiger reserve has huge popularity due to the presence
+                of the king and the queen of tigers. The safari holiday brings a
+                lot of fun, and there is a huge story behind this scenic
+                landscape, which will be true excitement for a history lover.
+                Raw natural surroundings never fail to impress in the nearby
+                Andhari part of the reserve named as Andhari River. The name
+                Satpura is taken from the name of the god &quot;Satpura&quot; or
+                &quot;Taru&quot;, worshiped by the tribal locals who live in the
+                dense forests of the Satpura. Satpura National Park is also
+                known as the Tiger capital of India. The forest is divided into
+                three ranges: Satpura North Range, Kolsa South and Mohurli
+                Range.
               </p>
-              <div className="mt-3">
-                <h5 className="text-amber-800 mb-2 text-amber-900 font-semibold text-2xl">
-                  Broken Tail (T-17)
-                </h5>
-                <p>
-                  Broken Tail was a park favorite since everyone knew him by his
-                  broken tail. Sadly, he went missing in 2010 and was eventually
-                  found dead in a village nearby.
-                </p>
-                <p>
-                  These famous tigers not only made Ranthambore&apos;s wildlife
-                  history famous, but they also motivated many tourists to
-                  admire and protect India&apos;s natural beauty.
-                </p>
-              </div>
+              <p>
+                Satpura Tiger Reserve Forest is divided into a core zone and a
+                buffer zone, and in the core zone, no locals are allowed. There
+                are also Tourism zones and Non-Tourism zones and in the Tourism
+                zone only 20% tourists are allowed, while the 80 % area is
+                Non-Tourism zone where the forest authorities are allowed to
+                enter. The jungle has a good water resource where animals often
+                come to quench their thirst. Satpura jungle is beyond Tiger, as
+                it seems like almost a different world altogether with majestic
+                sightings of greater courcal, goose, songbirds, and many more.
+                Satpura Lake is spread over 45 km and the place was declared a
+                sanctuary in 1935.
+              </p>
             </div>
-            {/* Right */}
-            <img src={bandhav} alt="bandhav image" className="core-img" />
           </div>
         </div>
       </section>

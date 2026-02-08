@@ -1,5 +1,5 @@
 .custom-navLink {
-  background: #e06926;
+  background: #c16700;
   padding: 0.25rem 1rem;
   border-radius: 2px;
   transform: skew(-7deg);
@@ -53,7 +53,7 @@
 }
 
 .navbar-even-info-container {
-  background-color: #e06926;
+  background-color: #c16700;
   color: white;
   padding: 3px 0;
   display: flex;

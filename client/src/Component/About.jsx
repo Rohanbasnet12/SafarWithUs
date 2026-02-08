@@ -1,7 +1,5 @@
 import "../App.css";
 import "../styles/About.css";
-import aboutImg from "../assets/images/agarzar-banner2.jpg";
-
 function About() {
   return (
     <>
@@ -9,191 +7,73 @@ function About() {
         <section id="about-corbett">
           <div id="about-corbett-title">
             <h1>Discover Ranthambore: India’s Royal Tiger Reserve</h1>
-            <div className="about-container">
-              {/* Top Section */}
-              <div className="about-top">
-                {/* Left Image */}
-                <div className="about-left">
-                  <img
-                    src={aboutImg}
-                    alt="Jim Corbett National Park"
-                    className="about-img"
-                  />
-                </div>
-
-                {/* Right Text */}
-                <div className="about-right">
-                  <p>
-                    Ranthambore National Park is one of India’s largest and most
-                    renowned national Parks. Located in Rajasthan’s Sawai
-                    Madhopur district, it offers a thrilling wildlife experience
-                    that you simply don’t want to miss. This national park is
-                    the perfect mix of natural beauty, rich history, and
-                    adventurous wildlife encounters.
-                  </p>
-                  <p className="mt-2">
-                    Initially, it was established as a wildlife sanctuary in
-                    1955. Then, in 1973, it was proclaimed as one of India’s
-                    Project Tiger reserves. Later, this wildlife sanctuary was
-                    designated as a national park in 1980. This beautiful
-                    national park is named after the historic Ranthambore Fort.
-                    Ranthambore Fort is a UNESCO World Heritage Site that
-                    impressively overlooks the park. It adds a royal charm to
-                    the wilderness.
-                  </p>
-                  <p className="mt-2">
-                    Rathambore is widely known as the land of tigers. Hence, it
-                    offers an enchanting opportunity to spot the incredible
-                    Royal Bengal Tiger in its natural habitat. Along with
-                    tigers, this national park is also home to a diverse array
-                    of wildlife. This includes sloth bears, striped hyenas,
-                    leopards, Indian foxes, nilgai, langurs, and sambar deer.
-                    Furthermore, it is nothing less than a paradise for bird
-                    lovers. Here, you can spot more than 300 bird species,
-                    encompassing peacocks and kingfishers, to crested serpent
-                    eagles.
-                  </p>
-                </div>
-              </div>
-
-              {/* Bottom Paragraph */}
-              <div className="about-bottom">
-                <p className="mt-2">
-                  This national park’s landscape is a fantastic mix of dense
-                  forests, vast grasslands, ancient banyan trees, serene lakes,
-                  and rugged hills of the Aravali and Vidhya ranges. It supports
-                  more than 500 species of flora. This includes dhok trees,
-                  mango, and banyan. Altogether, it offers a charming glance
-                  into Rajasthan’s heritage.
-                </p>
-                <p className="mt-1">
-                  It doesn’t matter whether you are an adventure enthusiast, a
-                  nature lover, or a wildlife photographer; you will enjoy this
-                  park. Ranthambore guarantees an excellent experience loaded
-                  with thrill, exploration, and beauty. Wanna be the park for
-                  our next wildlife adventure at Ranthambore National Park?
-                  Check out our tour packages, hotel bookings, and adventurous
-                  safari experiences right now. Grab an opportunity to spot the
-                  royal wilderness like never before!
-                </p>
-              </div>
-              <div>
-                <h3 className="text-2xl text-left font-bold mb-3 text-amber-800">
-                  Your Gateway to Ranthambore Adventures
-                </h3>
-                <p className="mb-2 text-left">
-                  Are you planning a trip to Ranthambore? We are here to make
-                  your trip smooth, comfortable, and unforgettable. At Seven
-                  Safar, our job is to understand exactly what you are expecting
-                  from your vacation. And after that, make it happen. We begin
-                  by listening to your travel goal and what your dream
-                  exploration looks like. As we gather enough information, our
-                  dedicated team designs your personalised itinerary and
-                  allocates the best deals for you. Consider us as your travel
-                  partners. We will help you explore Ranthambore comfortably
-                  without any stress. It doesn’t matter whether it&apos;s your
-                  first wildlife adventure or you are a seasoned traveller, we
-                  will make your Ranthambore experience really special. This is
-                  because your Ranthambore adventure with Seven Safar deserves
-                  nothing less than excellence.
-                </p>
-              </div>
-            </div>
           </div>
-          {/* 4 Card Layout */}
-          <div className="rc-wrapper">
-            <div className="rc-container">
-              <div className="rc-grid" role="list">
-                <article className="rc-card" role="listitem">
-                  <img
-                    className="rc-card-image"
-                    src="https://images.unsplash.com/photo-1591081658714-f576fb7ea3ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
-                    alt="Safari Booking"
-                  />
-                  <div className="rc-card-body">
-                    <h3 className="rc-title">Safari Booking</h3>
-                    <p className="rc-description">
-                      Experience the thrill of wildlife with our expertly guided
-                      safari tours. See exotic animals in their natural habitat.
-                    </p>
-                    <div className="rc-footer">
-                      <button
-                        className="rc-btn"
-                        aria-label="Book Safari Booking"
-                      >
-                        Book Now
-                      </button>
-                    </div>
-                  </div>
-                </article>
 
-                <article className="rc-card" role="listitem">
-                  <img
-                    className="rc-card-image"
-                    src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
-                    alt="Canter Booking"
-                  />
-                  <div className="rc-card-body">
-                    <h3 className="rc-title">Canter Booking</h3>
-                    <p className="rc-description">
-                      Explore the beautiful landscapes with our comfortable
-                      canter rides. Perfect for group excursions.
-                    </p>
-                    <div className="rc-footer">
-                      <button
-                        className="rc-btn"
-                        aria-label="Book Canter Booking"
-                      >
-                        Book Now
-                      </button>
-                    </div>
-                  </div>
-                </article>
+          <div>
+            <p>
+              Satpura National Park is the best place to go for a tranquil
+              wildlife experience without tourists around. This hidden gem in
+              Madhya Pradesh is not at all like the bustling, jeep-filling
+              routes of their more popular parks. Underneath the canopy of
+              trees, so peaceful is it that you can really hear wild sounds
+              without competing with the roaring engines of tourists. The
+              scenery is mesmerizing with dramatic hilly ridges, gorges carved
+              over time and gentle running slow streams. Established in 1981,
+              Satpura stretched across a vast protected area and is famous not
+              only for how easy it makes spotting wildlife, but for the quality
+              of the sightings. The park’s undiscovered mystique stems from its
+              location in the heart of the ancient Satpura mountain range,
+              revealing hidden treasures with every bend you take. Be it while
+              venturing into its core zone, or placing your buffer of forest
+              between you and the world, a rich tapestry of flora and fauna will
+              provide a peaceful backdrop. For the travelers who long for a more
+              authentic, solitude-tinged wilderness experience in India, Satpura
+              is a rare peace-filled sanctuary all to himself to disappear to.
+            </p>
+            <p>
+              Satpura National Park, known locally as Madhai, sits at the center
+              of India&apos;s natural heritage and is much more than a tiger
+              reserve; it is a vibrant, ancient landscape. Being one of the
+              oldest reserve forests of the country , it is an essential part of
+              the first biosphere reserve of Madhya Pradesh. Its name, which
+              means “seven hills” in Sanskrit, reflects its rugged, diverse
+              landscape of stunning sandstone formations, cascading waterfalls,
+              dense sal and teak forests. This unique terrain forms a special
+              basin between two great rivers and harbors a wildlife also rare
+              for the area. Satpura is a favorite among birdwatchers and its
+              reservoirs and grasslands are home to more than 300 species,
+              including some colorful migratory visitors. The rich fabric of the
+              park extends even beyond such famous mammals to include myriad
+              medicinal plants and rare animals. It is this perfect blend of
+              unspoilt beauty, ecological importance and abundance that makes a
+              Satpura for all seasons and a Satpura for any nature lover and a
+              Satpura for every nature lover.
+            </p>
+          </div>
 
-                <article className="rc-card" role="listitem">
-                  <img
-                    className="rc-card-image"
-                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
-                    alt="Hotel Booking"
-                  />
-                  <div className="rc-card-body">
-                    <h3 className="rc-title">Hotel Booking</h3>
-                    <p className="rc-description">
-                      Find the perfect accommodation for your stay. We offer a
-                      wide range of hotels to suit every budget.
-                    </p>
-                    <div className="rc-footer">
-                      <button
-                        className="rc-btn"
-                        aria-label="Book Hotel Booking"
-                      >
-                        Book Now
-                      </button>
-                    </div>
-                  </div>
-                </article>
-
-                <article className="rc-card" role="listitem">
-                  <img
-                    className="rc-card-image"
-                    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
-                    alt="Tour Booking"
-                  />
-                  <div className="rc-card-body">
-                    <h3 className="rc-title">Tour Booking</h3>
-                    <p className="rc-description">
-                      Discover new places with our guided tours. We take care of
-                      everything so you can enjoy your journey.
-                    </p>
-                    <div className="rc-footer">
-                      <button className="rc-btn" aria-label="Book Tour Booking">
-                        Book Now
-                      </button>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
+          <div>
+            <h3 className="mb-2 text-2xl font-semibold">
+              A Biodiverse Treasure in the Heart of India
+            </h3>
+            <p>
+              Satpura National Park, known locally as Madhai, sits at the center
+              of India&apos;s natural heritage and is much more than a tiger
+              reserve; it is a vibrant, ancient landscape. Being one of the
+              oldest reserve forests of the country , it is an essential part of
+              the first biosphere reserve of Madhya Pradesh. Its name, which
+              means “seven hills” in Sanskrit, reflects its rugged, diverse
+              landscape of stunning sandstone formations, cascading waterfalls,
+              dense sal and teak forests. This unique terrain forms a special
+              basin between two great rivers and harbors a wildlife also rare
+              for the area. Satpura is a favorite among birdwatchers and its
+              reservoirs and grasslands are home to more than 300 species,
+              including some colorful migratory visitors. The rich fabric of the
+              park extends even beyond such famous mammals to include myriad
+              medicinal plants and rare animals. It is this perfect blend of
+              unspoilt beauty, ecological importance and abundance that makes a
+              Satpura for all seasons and a Satpura for any nature lover and a
+              Satpura for every nature lover.
+            </p>
           </div>
         </section>
       </div>

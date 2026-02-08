@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,7 +12,9 @@ const Banner = () => {
   useEffect(() => {
     const fetchBanners = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_APP_API_URL}/api/herosection/get-banner`);
+        const response = await axios.get(
+          `${import.meta.env.VITE_APP_API_URL}/api/herosection/get-banner`,
+        );
         setBanners(response.data.banner?.images || []);
         setIsLoading(false);
       } catch (error) {
@@ -32,7 +34,7 @@ const Banner = () => {
     autoplay: true,
     autoplaySpeed: 2400,
     arrows: true,
-    adaptiveHeight: false
+    adaptiveHeight: false,
   };
 
   if (isLoading) {
@@ -48,8 +50,8 @@ const Banner = () => {
       <Slider {...settings}>
         {banners.map((img, index) => (
           <div key={index} className="slick-slide">
-            <img 
-              src={`${import.meta.env.VITE_APP_API_URL}${img}`} 
+            <img
+              src={`${import.meta.env.VITE_APP_API_URL}${img}`}
               alt={`Slide ${index + 1}`}
             />
           </div>

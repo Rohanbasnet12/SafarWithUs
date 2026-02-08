@@ -3,7 +3,7 @@ const MustSeeAttractions = () => {
     <>
       <section className="container mx-auto px-6 py-4 my-4">
         <h3 className="font-bold text-2xl mb-3 text-amber-800">
-          Must-See Attractions in Ranthambore
+          Must-See Attractions in Satpura
         </h3>
         <p>
           Ranthambore is more than just a great site for tiger lovers; it&apos;s

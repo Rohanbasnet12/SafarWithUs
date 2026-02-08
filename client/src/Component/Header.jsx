@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo.png";
 import axios from "axios";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "../styles/Header.css"; // Assuming you have a CSS file for styles
 
 const BASE_URL = `${import.meta.env.VITE_APP_API_URL}`;
@@ -26,7 +24,7 @@ function Header() {
       className="navbar-container"
       style={{
         zIndex: "1000",
-        background: "#853100ff",
+        background: "#D79240",
       }}
     >
       <div className="navbar">
